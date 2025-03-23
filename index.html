@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Figma App</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #ffffff; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <iframe src="https://www.figma.com/proto/6eNWYwrf8WcejQCV3UbIzb/1Channel-SFA-New?node-id=2201-14433&t=XOWiA96FTTThf1gt-1" allowfullscreen></iframe>
+
+    <script>
+        // Register the service worker
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("Service Worker Registered"))
+                .catch((error) => console.log("Service Worker Registration Failed:", error));
+        }
+    </script>
+</body>
+</html>
