@@ -7,15 +7,14 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#ffffff">
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #ffffff; }
-        iframe { width: 100%; height: 100%; border: none; }
+        body { display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        a { font-size: 20px; padding: 15px 25px; background: #6200EE; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
-    <iframe src="https://www.figma.com/proto/6eNWYwrf8WcejQCV3UbIzb/1Channel-SFA-New?node-id=2201-14433&t=XOWiA96FTTThf1gt-1" allowfullscreen></iframe>
+    <a href="https://www.figma.com/proto/6eNWYwrf8WcejQCV3UbIzb/1Channel-SFA-New?node-id=2201-14433&t=XOWiA96FTTThf1gt-1" target="_blank">Open Prototype</a>
 
     <script>
-        // Register the service worker
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("service-worker.js")
                 .then(() => console.log("Service Worker Registered"))
